@@ -6,12 +6,12 @@ Distributed Useraccount Disable
 I started this project a while back. We had a plan for being able to quickly disable user accounts across
 hundreds of servers. This could have been accomplished easily enough with a shell script looping through a list
 of servers, but the project was ultimately going to be handled by HR/front-office people. So the system had
-to be both very easy to use, and to track its usage.<br
+to be both very easy to use, and to track its usage.<br>
 
-There are a few requirements that must be met for this project to work for you:<br>
-1) You will need SSH-key trusts setup from the server that hosts this project, to ALL servers it will disable user accounts on.<br>
-2) Apache, and PHP ust be installed on the host server.<br>
-3) The project can attempt to email a person, or list when a user account is disabled, outbound SMTP is needed for this.<br>
+There are a few requirements that must be met for this project to work for you:</li>
+<li> You will need SSH-key trusts setup from the server that hosts this project, to ALL servers it will disable user accounts on.</li>
+<li> Apache, and PHP ust be installed on the host server.</li>
+<l> The project can attempt to email a person, or list when a user account is disabled, outbound SMTP is needed for this.</li>
 
 
 Nuts and Bolts
