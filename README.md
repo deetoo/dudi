@@ -18,14 +18,14 @@ There are a few requirements that must be met for this project to work for you:<
 Nuts and Bolts
 ==============
 The underlying process is very simple, I'll list the operational steps below:<br>
-<br>
-1) You are given the task of disabling the 'jdoe' user acount.<br>
-2) Youpoint your web browser to the URL of the host machine and enter your username/password.<br>
-3) After authenticating, you enter 'jdoe' in the form, and press submit.<br>
-4) The system checks against a list of usernames that should NEVER be disabled.<br>
-5) If the username passes that check, it's passed to a data file.<br>
-6) At a pre-defined schedule, cron runs a job that looks for that data file, and if it exists, reads the contents.<br>
-7) The cron job now has a user to disable, it reads a list of servers, connects to each sequentially, disables the account.<br>
-8) Any errors are logged.<br>
-9) An email is then crafted which gives details on each operation, and any errors. The mail is sent to a list, or user.<br>
-10) The data file with the 'jdoe' user account is deleted.<br>
+<ol>
+<li> You are given the task of disabling the 'jdoe' user acount.</li>
+<li> You point your web browser to the URL of the host machine and enter your username/password.</li>
+<li> After authenticating, you enter 'jdoe' in the form, and press submit.</li>
+<li> The system checks against a list of usernames that should NEVER be disabled.</li>
+<li> If the username passes that check, it's passed to a data file.</li>
+<li> At a pre-defined schedule, cron runs a job that looks for that data file, and if it exists, reads the contents.</li>
+<li> The cron job now has a user to disable, it reads a list of servers, connects to each sequentially, disables the account.</li>
+<li> Any errors are logged.</li>
+<li> An email is then crafted which gives details on each operation, and any errors. The mail is sent to a list, or user.</li>
+<li> The data file with the 'jdoe' user account is deleted.</li>
