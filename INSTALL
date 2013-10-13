@@ -1,0 +1,5 @@
+FILES
+index.php - landing page for web site.
+user.dat - sample user disable data file.
+cron.txt - sample cron entry for scheduled disabling
+servers.dat - sample server list
