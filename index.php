@@ -1,11 +1,17 @@
 <html>
 <?
+
+$DelFile = "/tmp/user.dat";
+
+
 if ( $_POST['action'] == "add") {
 $UserDel = $_POST['useracct'];
 
-$fp = fopen('/tmp/user.dat', 'w');
+$fp = fopen( $DelFile , 'w' );
 fwrite($fp, $UserDel);
 fclose($fp);
+// set  perms so script owner can delete after exec.
+chmod( $DelFile, 0777 );
 
 print "<center>Account queued to be disabled.</center>";
 }
