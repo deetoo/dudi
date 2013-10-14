@@ -1,7 +1,7 @@
 #!/bin/sh
 
-USERFILE="/tmp/user.dat"
-SERVERSFILE="/tmp/servers.dat"
+USERFILE="/home/www-data//user.dat"
+SERVERSFILE="/home/www-data/servers.dat"
 
 if [ -f $USERFILE ]
 	then
