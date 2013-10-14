@@ -15,7 +15,7 @@ if [ $DelUser = "root" ]
 
 while read server
 	do
-		ssh root@$server 'usermod -L -e 1 $DelUser'
+		 ssh root@$server "usermod -L -e 1 $DelUser"
 	done < $SERVERSFILE
 
 else
