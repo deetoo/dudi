@@ -1,5 +1,6 @@
 FILES
 index.php - landing page for web site.
+dudi.sh - shell script that connects to remote servers and disables accounts
 user.dat - sample user disable data file.
 cron.txt - sample cron entry for scheduled disabling
 servers.dat - sample server list
