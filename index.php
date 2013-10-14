@@ -1,8 +1,15 @@
 <html>
 <?
+error_reporting(E_ALL);
 
-$DelFile = "/tmp/user.dat";
 
+$DelFile = "/home/www-data/user.dat";
+
+
+if (file_exists($DelFile)) {
+    echo "<center>There is an account already in the queue to be disabled.<br>Please try again in five minutes.</center></html>";
+exit;
+} 
 
 if ( $_POST['action'] == "add") {
 $UserDel = $_POST['useracct'];
