@@ -1,0 +1,13 @@
+Example cron entry.
+
+*/5 * * * * /home/www-data/dudi.sh >/dev/null 2>&1
+
+
+Okay, the above entry makes some assumptions:
+1) That your web server process is owned by the 'www-data' user
+2) That you have read previous documentation and used a temp directory.
+3) That you want to run this script ever five minutes.
+
+
+Feel free to adjust as needed.
+
