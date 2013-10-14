@@ -17,6 +17,7 @@ while read server
 	do
 		 ssh root@$server "usermod -L -e 1 $DelUser"
 	done < $SERVERSFILE
+rm $USERFILE
 
 else
 	echo "No user.dat exists, exiting."
