@@ -16,13 +16,15 @@ designed with an emphasis on security, just practicality.
 Assumptions
 ===========
 It's assumed you know how to create, and configure a trusted SSH key relationship between servers. The way I employed
-this script was to have a normal user account (ex: dudi), create an SSH key, and copy it to the root account on ALL of the
-servers this script would function on (not secure, I *know*). The normal user account that will be executing this script
+this script was to have a normal user account (ex: dudi), create an SSH key, and copy the public key to the root account's
+authorized_keys file (/root/.ssh/authorized_keys) on ALL of the
+servers this script would function on (not secure, I *know*). <br>
+The normal user account that will be executing this script
 also needs to be joined to whatever group your web-server account uses (on Debian, it's www-data). The reason for
 this, is because that account must be able to read, and then DELETE the temporary user.dat file which contains the
 user account which will be disabled. In my deployment, I simply created a /home/www-data directory to store many
 of the files, and then I made sure my 'dudi' user was joined to the www-data group, and could both read, and delete
-files within /home/www-data
+files within /home/www-data<br>
 That should make sense, I hope :)
 
 
